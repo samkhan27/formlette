@@ -6,7 +6,7 @@ If you are a Salesforce Developer, chances are you've built plenty of forms. Ent
 
 The requirements in Enterprises usually go something like this, "Collect a whole bunch of data from users but don't bombard them with all the input fields at once; instead, render only the fields that are relevant based on the inputs they have already filled oud." I've built formlette to simplify the process of building such forms in LWC by housing the forms state in one place and by separating out the conditional rendering logic from the mark up by configuring each element in the form to render based on the data housed in the form.
 
-## What does formlette do?
+## Example of Usage
 Basically, formlette lets you build forms with behaviour such as this:
 with code like this:
 
@@ -111,8 +111,11 @@ export default class Example extends formAbstract {
 }
 ```
 
-## How to use it?
-Formlette provides the developer with two LWC components.
+## Documentation
+Formlette provides the developer with two LWC components:
+
+1. formAbstract
+2. formlette
 
 ### formAbstract
 An abstract component that must be extended by the component implementing the form. The formAbstract component provides the sub component (the one that extends it) with a shared from state to house the form data and functions to update, validate and access said form data. formAbstract exposes the following public properties:
