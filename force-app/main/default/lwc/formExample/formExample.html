@@ -1,0 +1,60 @@
+<template>
+    <lightning-input 
+        class="formlette-input"
+        type="text" 
+        label="Input that has no contidional render logic" 
+        name="noConditionalLogic"
+        onfocusout={handleTouched}
+        onchange={handleValueChange}
+        required>
+    </lightning-input>
+    <c-formlette track-touch visibility-state={visibilities} name="libName" >
+        <lightning-input 
+            class="formlette-input"
+            type="text" 
+            label="Say my name"
+        >
+        </lightning-input>
+    </c-formlette>
+    <c-formlette track-touch visibility-state={visibilities} config={moreConfig} name="more" >
+        <lightning-combobox 
+            class="formlette-input" 
+            label="Would you like to see more input components?" 
+            placeholder="Please select"
+            value={values.more} 
+            options={yesNoOptions} 
+            required>
+        </lightning-combobox>
+    </c-formlette>
+    <c-formlette track-touch visibility-state={visibilities} config={someMoreConfig} name="noop">
+        <lightning-input 
+            class="formlette-input"
+            type="text" 
+            label="Here's one that does nothing" 
+            value={values.noop}
+            >
+        </lightning-input>
+    </c-formlette>
+    <c-formlette track-touch visibility-state={visibilities} config={someMoreConfig} name="someMore">
+        <lightning-combobox 
+            class="formlette-input" 
+            label="How about some more?" 
+            placeholder="Please select"
+            value={values.someMore} 
+            options={someMoreOptions} 
+            required>
+        </lightning-combobox>
+    </c-formlette>
+    <c-formlette track-touch visibility-state={visibilities} config={lastConfig} name="last">
+        <lightning-input 
+            class="formlette-input" 
+            label="last one"
+            placeholder="last one"
+            value={values.last} 
+            required>
+        </lightning-input>
+    </c-formlette>
+    <div class="slds-p-vertical_small">
+        <lightning-button label="Submit" variant="brand" onclick={handleSubmit}></lightning-button>
+    </div>
+</template>
