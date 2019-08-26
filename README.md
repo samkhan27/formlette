@@ -2,6 +2,9 @@
 
 # Formlette
 #### A form library for Lightning Web Components(LWC) framework
+
+Blog post [here](https://medium.com/@sameedhkhan/formlette-a26b2547b775)
+
 If you are a Salesforce Developer, chances are you've built plenty of forms. Enterprises love forms, usually large ones, with lots of inputs and logic conditional rendering those inputs. Formlette - pronounced like omelette - is a library for building such forms in Salesforce' Lightning Web Components (LWC) framework.
 
 The requirements in Enterprises usually go something like this, "Collect a whole bunch of data from users but don't bombard them with all the input fields at once; instead, render only the fields that are relevant based on the inputs they have already filled oud." I've built formlette to simplify the process of building such forms in LWC by housing the forms state in one place and by separating out the conditional rendering logic from the mark up by configuring each element in the form to render based on the data housed in the form.
