@@ -137,7 +137,7 @@ An abstract component that must be extended by the component implementing the fo
 
 *updateValuesAndVisibilities()*: Method that takes as its parameter, a JS object of input values keyed by their names and updates the values state and updates which components should be visible based on those updated values. This is meant to be used to populate one or more fields in the form based on external inputs (not user inputs).
 
-*validateInputs()*: Runs validation checks on all the visible inputs and returns true of all the visible fields in the form have valid inputs. For this validation method to be used the component needs to be decorated with the class 'formlette-input'. If it is a custom input component, it needs to implement the *reportVailidity()* and *checkValidity()* methods which should work in a manner similar to that specified by Salesforce' base input component, [lightning-input](https://developer.salesforce.com/docs/component-library/bundle/lightning-input/specification).
+*validateInputs()*: Runs validation checks on all the visible inputs and returns true if all the visible fields in the form have valid inputs. For this validation method to be used the component needs to be decorated with the class 'formlette-input'. If it is a custom input component, it needs to implement the *reportVailidity()* and *checkValidity()* methods which should work in a manner similar to that specified by Salesforce' base input component, [lightning-input](https://developer.salesforce.com/docs/component-library/bundle/lightning-input/specification).
 
 
 
